@@ -87,7 +87,6 @@ public class LoginScreen extends Screen {
 		panel_1.add(lblNewLabel_2, gbc_lblNewLabel_2);
 		
 		JPasswordField passwordField = new JPasswordField();
-		passwordField.setText("test");
 		GridBagConstraints gbc_textField_1 = new GridBagConstraints();
 		gbc_textField_1.anchor = GridBagConstraints.WEST;
 		gbc_textField_1.insets = new Insets(0, 0, 5, 0);

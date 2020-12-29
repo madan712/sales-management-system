@@ -7,10 +7,13 @@ import java.util.HashSet;
 import java.util.List;
 import java.util.Set;
 
+import javax.transaction.Transactional;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import com.mascene.sms.dao.OrderDao;
+import com.mascene.sms.dao.ProductDao;
 import com.mascene.sms.model.OrderItem;
 import com.mascene.sms.model.Orders;
 import com.mascene.sms.model.Product;
@@ -21,6 +24,9 @@ public class AppService {
 
 	@Autowired
 	private OrderDao orderDao;
+	
+	@Autowired
+	private ProductDao productDao;
 
 	private User user;
 
@@ -56,6 +62,7 @@ public class AppService {
 		cart.clear();
 	}
 
+	@Transactional
 	public boolean createOrder(List<Product> productList, User user) {
 
 		Orders newOrder = new Orders();
@@ -84,6 +91,7 @@ public class AppService {
 		
 		try {
 			orderDao.saveOrders(newOrder);
+			// TODO reduce product quantity
 			return true;
 		} catch (Exception e) {
 			System.out.println("Error while saving order");
