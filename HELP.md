@@ -1,5 +1,15 @@
 # Getting Started
 
+Before running the project you need to create database tables and update the database credentials
+
+### Create database tables
+You can find sql queries in below file<br/>
+  sales-management-system\src\main\resources\database.sql
+
+### Update database credentials
+Update database credentials in application.properties<br/>
+  sales-management-system\src\main\resources\application.properties
+
 ### Reference Documentation
 For further reference, please consider the following sections:
 
