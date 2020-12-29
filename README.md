@@ -1,4 +1,4 @@
-# sales-management-system
+# Sales management system
 ## Course Project
 ### Project’s Objectives and Learning Goals
 This is a group course project with 2 students. You can start on the project from the first day of the course and concepts that must be used will be continually discussed during the duration of the semester. This is a multitier application with ORM (Object Relational Mapping) support.
