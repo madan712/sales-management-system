@@ -15,8 +15,8 @@ create table users
 	unique(username)
 );
 
-insert into users(username,password,role) values ('ankit','test','SALES');
-insert into users(username,password,role) values ('manpreet','test','ADMIN');
+insert into users(username,password,role) values ('ram','test','SALES');
+insert into users(username,password,role) values ('shyam','test','ADMIN');
 
 create table product
 (

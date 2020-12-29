@@ -70,7 +70,6 @@ public class LoginScreen extends Screen {
 		panel_1.add(lblNewLabel_1, gbc_lblNewLabel_1);
 		
 		JTextField textField = new JTextField();
-		textField.setText("manpreet");
 		GridBagConstraints gbc_textField = new GridBagConstraints();
 		gbc_textField.anchor = GridBagConstraints.WEST;
 		gbc_textField.insets = new Insets(0, 0, 5, 0);
